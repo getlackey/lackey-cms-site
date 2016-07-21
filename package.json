@@ -1,0 +1,10 @@
+{
+  "name": "lackey-cms-site",
+  "dependencies": {
+    "lackey-cms": ">=0.5.21"
+  },
+  "scripts": {
+    "debug": "./node_modules/lackey-cms/bin/lackey site debug --site default",
+    "start": "node ./node_modules/lackey-cms/lib/server/start.js --harmony"
+  }
+}

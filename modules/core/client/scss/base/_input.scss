@@ -1,0 +1,13 @@
+button, input, select {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+@mixin clear {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin width-proportional-height($percentage: 100%) {
+    &:before {
+        content: "";
+        display: block;
+        padding-top: $percentage;
+    }
+}
+
+@mixin font-header($weight: 700, $style: normal) {
+    font-family: "Impact", sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+@mixin font-copy($weight: 400, $style: normal) {
+    font-family: "Arial", sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+}

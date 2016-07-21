@@ -1,0 +1,58 @@
+name : 'Lackey CMS Site'
+
+require:
+    - cms/users
+    - cms/cms
+
+init:
+    Language:
+        -
+            code: en
+            enabled: true
+            default: true
+
+    Content:
+         -
+            type: page
+            template: ~/core/index
+            route: /
+            state: published
+
+    Template:
+        -
+            name: Homepage Template
+            path: ~/core/index
+            selectable: true
+
+
+        #-
+        #    name: Article Preview
+        #    path: ~/core/partials/block/article-preview
+        #    thumb: img/cms/cms/svg/article.svg
+        #    type: block
+        #    props:
+        #        route:
+        #            label: Article
+        #            name: route
+        #            type: article
+
+        #-
+        #    name: Partner News
+        #    path: ~/core/partner-news-one
+        #    thumb: img/core/templates/article.jpg
+        #    selectable: true
+        #    prefix: /news/
+        #    props:
+        #        menu-category: *menu-category-values
+        #    taxonomies:
+        #        page-type:
+        #            - news
+        #        article-type:
+        #            - partner-news
+        #    variants:
+        #        - ~/core/variants/article-preview
+        #        - ~/core/variants/article-row
+        #    require:
+        #        - partner-perm
+
+    User: !import config/user.yml

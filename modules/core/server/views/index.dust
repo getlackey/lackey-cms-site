@@ -1,0 +1,5 @@
+{> "~/core/partials/structure" /}
+
+{<content}
+    <h1>Hee-haw, world!</h1>
+{/content}

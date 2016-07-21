@@ -1,0 +1,17 @@
+main.page {
+    @mixin main() {
+        position: relative;
+
+        overflow-x: hidden;
+    }
+
+    @mixin layout() {
+
+    }
+
+    @include main;
+
+    @media #{$media-normal} { @include layout(); }
+    @media #{$media-small} { @include layout(); }
+    @media #{$media-minimum} { @include layout(); }
+}

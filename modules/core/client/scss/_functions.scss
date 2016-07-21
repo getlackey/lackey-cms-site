@@ -1,0 +1,34 @@
+@function width-proportional-size($width) {
+    @return (16 / $width) * 100vw;
+}
+
+@function luma($color) {
+    $-local-red: red(rgba($color, 1.0));
+    $-local-green: green(rgba($color, 1.0));
+    $-local-blue: blue(rgba($color, 1.0));
+
+    @return (
+        0.2126 * $-local-red  +
+        0.7152 * $-local-green +
+        0.0722 * $-local-blue
+        ) / 255;
+}
+
+@function pick-visible-color($background, $colorA, $colorB, $bias: 0) {
+    $background-luma: luma($background) + $bias;
+    $colorA-luma: luma($colorA);
+    $colorB-luma: luma($colorB);
+
+    $colorA-diff: abs($background-luma - $colorA-luma);
+    $colorB-diff: abs($background-luma - $colorB-luma);
+
+    @if $colorA-diff > $colorB-diff {
+        @return $colorA;
+    } @else {
+        @return $colorB;
+    }
+}
+
+@function transparent-gif() {
+    @return unquote("url(\"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\");");
+}

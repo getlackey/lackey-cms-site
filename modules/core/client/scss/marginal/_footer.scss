@@ -1,0 +1,15 @@
+footer.page {
+    @mixin main() {
+
+    }
+
+    @mixin layout() {
+
+    }
+
+    @include main;
+
+    @media #{$media-normal} { @include layout(); }
+    @media #{$media-small} { @include layout(); }
+    @media #{$media-minimum} { @include layout(); }
+}

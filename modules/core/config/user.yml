@@ -1,0 +1,7 @@
+---
+    -
+        email: development@enigma-marketing.co.uk
+        name: Developer
+        password: password
+        roles:
+            - developer

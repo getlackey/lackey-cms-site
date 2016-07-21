@@ -1,0 +1,19 @@
+.ProseMirror-content {
+    padding: 0;
+    margin: 0;
+}
+
+.ProseMirror {
+    border: none;
+    outline: 1px dashed silver;
+}
+
+.ProseMirror-content p:first-child,
+.ProseMirror-content h1:first-child,
+.ProseMirror-content h2:first-child,
+.ProseMirror-content h3:first-child,
+.ProseMirror-content h4:first-child,
+.ProseMirror-content h5:first-child,
+.ProseMirror-content h6:first-child {
+    padding-top: 0;
+}
