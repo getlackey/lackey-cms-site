@@ -1,0 +1,6 @@
+*.lock
+node_modules
+htdocs
+uploads
+htdocs
+pdfs
