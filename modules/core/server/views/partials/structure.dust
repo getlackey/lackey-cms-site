@@ -15,11 +15,11 @@
         <link rel="stylesheet" href="css/core/style.css">
     </head>
     <body>
-        {> "~/core/partials/marginal/header" /}
+        {@block route="marginal/header" template="~/core/partials/marginal/header" /}
         <main class="page">
             {+content}<h1>No content provided!</h1>{/content}
         </main>
-        {> "~/core/partials/marginal/footer" /}
+        {@block route="marginal/footer" template="~/core/partials/marginal/footer" /}
 
         {?edit}<script src="js/cms/cms/iframe.js"></script>{/edit}
         {#javascripts}<script type="text/javascript" src="{.}"></script>{/javascripts}

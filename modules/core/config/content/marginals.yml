@@ -1,0 +1,16 @@
+---
+    -
+        type: shared
+        route: marginal/footer
+        template: ~/core/partials/marginal/footer
+        layout:
+            type: Fields
+            title: Footerworkingwhat
+
+    -
+        type: shared
+        route: marginal/header
+        template: ~/core/partials/marginal/header
+        layout:
+            type: Fields
+            title: Headerworkingwhat

@@ -11,7 +11,7 @@ init:
             enabled: true
             default: true
 
-    Content: !import config/pages.yml
+    Content: !import config/content/pages.yml config/content/pages.yml
 
     Template: !import config/blocks.yml config/templates.yml
 

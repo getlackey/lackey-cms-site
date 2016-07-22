@@ -1,1 +1,3 @@
-<footer class="page"></footer>
+<footer class="page">
+    <h2>{@editable content=data.content path="title" type="heading" parent=path editMode=edit /}</h2>
+</footer>
