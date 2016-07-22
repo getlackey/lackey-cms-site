@@ -11,6 +11,7 @@
         <meta property="og:url" content="{og_url}" />
         {?og_image}<meta property="og:image" content="{og_image}" />{/og_image}
 
+        {#stylesheets}<link rel="stylesheet" href="{.}"/>{/stylesheets}
         <link rel="stylesheet" href="css/core/style.css">
     </head>
     <body>
@@ -20,8 +21,7 @@
         </main>
         {> "~/core/partials/marginal/footer" /}
 
-        {?edit}
-            <script src="js/cms/cms/iframe.js"></script>
-        {/edit}
+        {?edit}<script src="js/cms/cms/iframe.js"></script>{/edit}
+        {#javascripts}<script type="text/javascript" src="{.}"></script>{/javascripts}
     </body>
 </html>
