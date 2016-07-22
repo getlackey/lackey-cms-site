@@ -1,0 +1,6 @@
+---
+    -
+        name: Demo Signup
+        path: ~/core/partials/block/signup-demo
+        type: block
+        #thumb: /img/cms/cms/svg/image.svg

@@ -1,0 +1,20 @@
+---
+    -
+        type: page
+        template: ~/core/index
+        route: /
+        state: published
+        layout:
+            type: Fields
+            title: What the what now?
+            blocks:
+                type: List
+                items:
+                    -
+                        type: Block
+                        template: ~/core/partials/block/signup-demo
+                        fields:
+                            title: Contact us for a **free** personal demo of the Lackey CMS
+                            namePlaceholder: Name
+                            emailPlaceholder: Email
+                            buttonLabel: Send me my link!
