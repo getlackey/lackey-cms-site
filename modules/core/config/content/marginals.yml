@@ -6,11 +6,3 @@
         layout:
             type: Fields
             title: Footerworkingwhat
-
-    -
-        type: shared
-        route: marginal/header
-        template: ~/core/partials/marginal/header
-        layout:
-            type: Fields
-            title: Headerworkingwhat
