@@ -1,5 +1,5 @@
 {> "~/core/partials/structure" /}
 
 {<content}
-    <h1>Hee-haw, world!</h1>
+    {@list edit=edit content=data.content path="blocks" editMode=edit /}
 {/content}
