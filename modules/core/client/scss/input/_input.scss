@@ -1,0 +1,13 @@
+input {
+    padding: $button-padding;
+
+    @include font-copy();
+    font-size: 0.875rem;
+
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid $color-blue-light;
+    border-radius: 4rem;
+
+    &::placeholder { color: #fff; }
+}
