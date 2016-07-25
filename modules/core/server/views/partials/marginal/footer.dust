@@ -1,6 +1,4 @@
 <footer class="page">
-    <a href="https://enigma-marketing.co.uk/">About Us</a>
-
     <a href="https://github.com/enigmamarketing">
         {> "~/core/partials/svg/logo-github" /}
     </a>
