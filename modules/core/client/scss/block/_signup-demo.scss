@@ -1,0 +1,36 @@
+article.signup-demo {
+    @mixin main() {
+        padding: 6.25rem 0 5.25rem;
+
+        background-color: $color-blue-dark;
+        text-align: center;
+        box-shadow: 0 1.25rem 1.875rem -0.625rem rgba(0, 0, 0, 0.15) inset;
+
+        > h1 {
+            margin-bottom: 1.75rem;
+
+            @include font-header(400);
+            font-size: 1.375rem;
+            color: #fff;
+        }
+
+        > input, > button {
+            width: 25%;
+            min-width: 12em;
+            margin-bottom: 1rem;
+
+            & + * { margin-left: 1.125rem; }
+        }
+    }
+
+    @mixin layout() {
+
+    }
+
+    @include main;
+
+    @media #{$media-maximum} { @include layout(); }
+    @media #{$media-normal} { @include layout(); }
+    @media #{$media-small} { @include layout(); }
+    @media #{$media-minimum} { @include layout(); }
+}

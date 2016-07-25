@@ -1,0 +1,16 @@
+article.copy-media {
+    @mixin main() {
+
+    }
+
+    @mixin layout() {
+
+    }
+
+    @include main;
+
+    @media #{$media-maximum} { @include layout(); }
+    @media #{$media-normal} { @include layout(); }
+    @media #{$media-small} { @include layout(); }
+    @media #{$media-minimum} { @include layout(); }
+}
