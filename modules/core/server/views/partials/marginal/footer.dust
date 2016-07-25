@@ -2,13 +2,13 @@
     <a href="https://enigma-marketing.co.uk/">About Us</a>
 
     <a href="https://github.com/enigmamarketing">
-        {> "~/core/partials/svg/logo-github" fill="#425A76" /}
+        {> "~/core/partials/svg/logo-github" /}
     </a>
     <a href="https://facebook.com/EnigmaMarketingServices">
-        {> "~/core/partials/svg/logo-facebook" fill="#425A76" /}
+        {> "~/core/partials/svg/logo-facebook" /}
     </a>
     <a href="https://twitter.com/EnigmaMarketing">
-        {> "~/core/partials/svg/logo-twitter" fill="#425A76" /}
+        {> "~/core/partials/svg/logo-twitter" /}
     </a>
 
     <a href="https://enigma-marketing.co.uk/">
