@@ -9,7 +9,7 @@
         {> "~/core/partials/svg/logo-twitter" /}
     </a>
 
-    <a href="https://enigma-marketing.co.uk/">
+    <a href="https://github.com/getlackey/lackey-cms/blob/master/LICENSE">
         © <script>document.write((new Date()).getFullYear());</script> Open sourced by Enigma
     </a>
 </footer>
