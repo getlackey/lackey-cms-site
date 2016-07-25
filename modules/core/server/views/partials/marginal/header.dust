@@ -1,6 +1,8 @@
 <header class="page">
     <a href="/">lackey.io</a>
-    <a href="https://github.com/getlackey/lackey-cms"><img src></a>
+    <a href="https://github.com/getlackey/lackey-cms">
+        {> "~/core/partials/svg/logo-github" /}
+    </a>
 
     <h2>{@editable content=data.content path="subtitle" type="heading" parent=path editMode=edit /}</h2>
     <h1>{@editable content=data.content path="title" type="heading" parent=path editMode=edit /}</h1>
