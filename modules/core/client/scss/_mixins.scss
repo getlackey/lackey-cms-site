@@ -21,7 +21,7 @@
 }
 
 @mixin font-copy($weight: 400, $style: normal) {
-    font-family: "Arial", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: $style;
     font-weight: $weight;
 }
