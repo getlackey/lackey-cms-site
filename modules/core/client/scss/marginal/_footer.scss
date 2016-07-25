@@ -1,6 +1,29 @@
 footer.page {
     @mixin main() {
+        padding: 3.125rem 6.25rem;
 
+        text-align: right;
+        background-color: $color-blue-mid;
+
+        a {
+            display: inline-block;
+
+            @include font-copy();
+            font-size: 0.625rem;
+
+            color: rgba($color-blue-dim, 0.6);
+            vertical-align: middle;
+
+            & + a { margin-left: 1.25rem; }
+            &:last-of-type { margin-left: 2rem; }
+
+            svg {
+                width: auto;
+                height: 1rem;
+
+                fill: rgba($color-blue-dim, 0.6);
+            }
+        }
     }
 
     @mixin layout() {
