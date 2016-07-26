@@ -3,7 +3,11 @@ article.copy-cta {
         padding: 10rem 0;
 
         text-align: center;
+
         background-color: $color-blue-dim;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         box-shadow: 0 1.25rem 2.5rem -1.25rem rgba(0, 0, 0, 0.15) inset;
 
         > p {

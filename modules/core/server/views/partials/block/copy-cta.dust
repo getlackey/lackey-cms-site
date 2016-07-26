@@ -1,4 +1,5 @@
-<article class="copy-cta">
+<article class="copy-cta"
+         style="background-image: url({@media content=data.content path="backgroundImage" type="url"/})">
     {@editable content=data.content path="copy" parent=path editMode=edit /}
 
     <a class="button" href="{href}">
