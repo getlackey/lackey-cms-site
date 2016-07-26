@@ -1,4 +1,4 @@
-button {
+button, a.button {
     padding: $button-padding;
 
     @include font-copy(900);
