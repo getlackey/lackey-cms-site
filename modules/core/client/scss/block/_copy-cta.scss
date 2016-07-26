@@ -1,6 +1,6 @@
 article.copy-cta {
     @mixin main() {
-        padding: 10rem 0;
+        padding: 10rem 2rem;
 
         text-align: center;
 
@@ -21,7 +21,7 @@ article.copy-cta {
 
         > a.button {
             width: 33%;
-            min-width: 12em;
+            min-width: 20em;
             max-width: 19.75em;
 
             box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.15);
