@@ -1,0 +1,7 @@
+<article class="copy-cta">
+    {@editable content=data.content path="copy" parent=path editMode=edit /}
+
+    <a class="button" href="{href}">
+        {@editable content=data.content path="buttonLabel" type="heading" parent=path editMode=edit /}
+    </a>
+</article>
