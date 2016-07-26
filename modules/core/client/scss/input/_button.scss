@@ -1,10 +1,12 @@
 button, a.button {
+    display: inline-block;
     padding: $button-padding;
 
     @include font-copy(900);
     font-size: 0.875rem;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
 
     color: #fff;
     background-color: $color-blue-mid;
