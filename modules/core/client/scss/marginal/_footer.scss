@@ -2,7 +2,6 @@ footer.page {
     @mixin main() {
         padding: 3.125rem 6.25rem;
 
-        text-align: right;
         background-color: $color-blue-mid;
 
         a {
@@ -15,7 +14,6 @@ footer.page {
             vertical-align: middle;
 
             & + a { margin-left: 1.25rem; }
-            &:last-of-type { margin-left: 2rem; }
 
             svg {
                 width: auto;
@@ -26,13 +24,24 @@ footer.page {
         }
     }
 
-    @mixin layout() {
+    @mixin layout($is-stacked: false) {
+        @if $is-stacked {
+            text-align: center;
 
+            a:last-of-type {
+                display: block;
+                margin: 2rem 0 0;
+            }
+        } @else {
+            text-align: right;
+
+            a:last-of-type { margin-left: 2rem; }
+        }
     }
 
     @include main;
 
     @media #{$media-normal} { @include layout(); }
     @media #{$media-small} { @include layout(); }
-    @media #{$media-minimum} { @include layout(); }
+    @media #{$media-minimum} { @include layout(true); }
 }
