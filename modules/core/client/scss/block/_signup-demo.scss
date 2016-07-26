@@ -1,6 +1,6 @@
 article.signup-demo {
     @mixin main() {
-        padding: 7.25rem 0 6.25rem;
+        padding: 7.25rem 2rem 6.25rem;
 
         background-color: $color-blue-dark;
         text-align: center;
@@ -15,17 +15,25 @@ article.signup-demo {
         }
 
         > input, > button {
-            width: 25%;
-            min-width: 12em;
-            max-width: 19.75em;
             margin-bottom: 1rem;
-
-            & + * { margin-left: 1.5rem; }
         }
     }
 
-    @mixin layout() {
+    @mixin layout($is-stacked: false) {
+        @if $is-stacked {
+            > input, > button {
+                display: block;
+                width: 100%;
+            }
+        } @else {
+            > input, > button {
+                width: 25%;
+                min-width: 12em;
+                max-width: 19.75em;
 
+                & + * { margin-left: 1.5rem; }
+            }
+        }
     }
 
     @include main;
@@ -33,5 +41,5 @@ article.signup-demo {
     @media #{$media-maximum} { @include layout(); }
     @media #{$media-normal} { @include layout(); }
     @media #{$media-small} { @include layout(); }
-    @media #{$media-minimum} { @include layout(); }
+    @media #{$media-minimum} { @include layout(true); }
 }
