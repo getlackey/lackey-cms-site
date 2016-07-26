@@ -1,3 +1,14 @@
-<article class="copy-media">
+<article class="copy-media" data-theme="{theme}">
+    <section>
+        <h1>
+            {@editable content=data.content path="title" type="heading" parent=path editMode=edit /}
+        </h1>
+        <p>
+            {@editable content=data.content path="subtitle" type="heading" parent=path editMode=edit /}
+        </p>
+        {@editable content=data.content path="copy" parent=path editMode=edit /}
+    </section>
+    <figure>
 
+    </figure>
 </article>

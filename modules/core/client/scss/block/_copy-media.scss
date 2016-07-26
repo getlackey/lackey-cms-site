@@ -1,10 +1,53 @@
 article.copy-media {
     @mixin main() {
+        display: flex;
+        &:nth-child(even) { flex-direction: row-reverse; }
+        &:nth-child(odd) { flex-direction: row; }
 
+        padding: 10rem 0;
+
+        > * {
+            flex: 0 1 50%;
+        }
+
+        > section {
+            max-width: 21.875em;
+            margin: auto;
+
+            > h1 {
+                @include font-header();
+                font-size: 2.125rem;
+
+                & + *:not(:first-of-type) { margin-top: 3.5rem; }
+            }
+
+            > p:first-of-type {
+                @include font-header(400);
+                font-size: 1.125rem;
+
+                & + * { margin-top: 3.5rem; }
+            }
+
+            > p:not(:first-of-type) {
+                @include font-copy();
+                font-size: 0.875rem;
+                line-height: 1.7;
+            }
+        }
     }
 
     @mixin layout() {
 
+    }
+
+    @mixin color($color-header, $color-subtitle, $color-copy, $color-background) {
+        background-color: $color-background;
+
+        > section {
+            > h1 { color: $color-header; }
+            > p:first-of-type { color: $color-subtitle; }
+            > p:not(:first-of-type) { color: $color-copy; }
+        }
     }
 
     @include main;
@@ -13,4 +56,7 @@ article.copy-media {
     @media #{$media-normal} { @include layout(); }
     @media #{$media-small} { @include layout(); }
     @media #{$media-minimum} { @include layout(); }
+
+    &[data-theme=white] { @include color($color-blue-mid, $color-blue-dim, $color-blue-dim, #fff); }
+    &[data-theme=blue] { @include color(#fff, $color-blue-light, #fff, $color-blue-mid); }
 }
