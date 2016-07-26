@@ -7,29 +7,31 @@ article.signup-demo {
         box-shadow: 0 1.25rem 1.875rem -0.625rem rgba(0, 0, 0, 0.15) inset;
 
         > h1 {
-            margin-bottom: 2.75rem;
-
             @include font-header(400);
             font-size: 1.375rem;
             color: #fff;
-        }
-
-        > input, > button {
-            margin-bottom: 1rem;
         }
     }
 
     @mixin layout($is-stacked: false) {
         @if $is-stacked {
+            > h1 { margin-bottom: 4rem; }
+
             > input, > button {
                 display: block;
                 width: 100%;
+
+                margin-bottom: 2.25rem;
+                &:last-child { margin-bottom: 1rem; }
             }
         } @else {
+            > h1 { margin-bottom: 2.75rem; }
+
             > input, > button {
                 width: 25%;
                 min-width: 12em;
                 max-width: 19.75em;
+                margin-bottom: 1rem;
 
                 & + * { margin-left: 1.5rem; }
             }
