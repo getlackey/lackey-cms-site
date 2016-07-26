@@ -1,11 +1,19 @@
 input {
     padding: $button-padding;
+    padding-left: 4rem;
 
     @include font-copy();
     font-size: 0.875rem;
 
-    color: #fff;
     background-color: transparent;
+    background-image: url(../../img/core/icon/text.svg);
+    background-repeat: no-repeat;
+    background-position: 1.4rem center;
+    background-size: 1.625rem auto;
+
+    &[type=email] { background-image: url(../../img/core/icon/email.svg); }
+
+    color: #fff;
     border: 1px solid $color-blue-light;
     border-radius: 4rem;
 
