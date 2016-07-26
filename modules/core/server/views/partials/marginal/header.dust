@@ -6,6 +6,6 @@
         {> "~/core/partials/svg/logo-github" /}
     </a>
 
-    <h2>{@editable content=data.content path="subtitle" type="heading" parent=path editMode=edit /}</h2>
     <h1>{@editable content=data.content path="title" type="heading" parent=path editMode=edit /}</h1>
+    <p>{@editable content=data.content path="subtitle" type="heading" parent=path editMode=edit /}</p>
 </header>
