@@ -6,7 +6,8 @@
         state: published
         layout:
             type: Fields
-            title: What the what now?
+            title: Welcome to Lackey
+            subtitle: A new breed of CMS
             blocks:
                 type: List
                 items:
