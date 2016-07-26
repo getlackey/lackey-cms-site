@@ -27,6 +27,10 @@
                             subtitle: Easy to use and difficult to break.
                             copy: |
                                 Lackey facilitates the Client / Agency relationship, enforcing design rules and keeping admin users on a need to know basis. No dev stuff. It’s simple, focused &amp; consistent. Most CMS's let admins pick fonts, add hex ref colours, write HTML tags, and inject content in situations where it was never intended to go. Lackey gives admins just enough power and an easy life.
+                            image:
+                                type: Media
+                                source: img/core/lackey-emblem.svg
+                                mime: image/svg
                         props:
                             theme: white
 
@@ -38,6 +42,10 @@
                             subtitle: Easy to use and difficult to break.
                             copy: |
                                 Lackey facilitates the Client / Agency relationship, enforcing design rules and keeping admin users on a need to know basis. No dev stuff. It’s simple, focused &amp; consistent. Most CMS's let admins pick fonts, add hex ref colours, write HTML tags, and inject content in situations where it was never intended to go. Lackey gives admins just enough power and an easy life.
+                            image:
+                                type: Media
+                                source: img/core/lackey-emblem.svg
+                                mime: image/svg
                         props:
                             theme: white
 
@@ -49,6 +57,10 @@
                             subtitle: Be creative. Not constrained
                             copy: |
                                 Lackey facilitates the Client / Agency relationship, enforcing design rules and keeping admin users on a need to know basis. No dev stuff. It’s simple, focused &amp; consistent. Most CMS's let admins pick fonts, add hex ref colours, write HTML tags, and inject content in situations where it was never intended to go. Lackey gives admins just enough power and an easy life.
+                            image:
+                                type: Media
+                                source: img/core/lackey-emblem.svg
+                                mime: image/svg
                         props:
                             theme: blue
 
@@ -58,5 +70,9 @@
                         fields:
                             copy: Check out the Lackey UI prototype lorem ipsum dolor amet
                             buttonLabel: Let's see it then
+                            backgroundImage:
+                                type: Media
+                                source: img/core/lackey-ui-prototype.jpg
+                                mime: image/jpeg
                         props:
                             href: https://projects.invisionapp.com/d/main#/console/7548432/162252325/preview
