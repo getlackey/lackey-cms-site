@@ -3,3 +3,7 @@
         name: Homepage Template
         path: ~/core/index
         selectable: true
+        expose:
+            -
+                path: layout.blocks
+                type: List
