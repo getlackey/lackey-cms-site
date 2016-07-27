@@ -1,0 +1,29 @@
+server {
+    listen 8080;
+    server_name <%= domain %>;
+
+    root /srv/websites/<%= application_stage %>/current/htdocs;
+    index index.html index.htm;
+
+    client_max_body_size 1M;
+
+    location / {
+        #auth_basic "Restricted";
+        #auth_basic_user_file /srv/websites/<%= application_stage %>/current/auth/.htpasswd;
+
+        # First attempt to serve request as file, then fall back to proxying it
+        try_files $uri @node;
+
+    }
+
+    location @node {
+        proxy_pass http://unix:/tmp/<%= application_stage %>.socket;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-for $remote_addr;
+        # https://github.com/socketio/socket.io/issues/1942#issuecomment-82352072
+    }
+}
