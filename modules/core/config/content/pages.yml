@@ -71,6 +71,5 @@
                             backgroundImage:
                                 type: Media
                                 source: img/core/lackey-ui-prototype.jpg
-                                mime: image/jpeg
                         props:
                             href: https://projects.invisionapp.com/d/main#/console/7548432/162252325/preview
