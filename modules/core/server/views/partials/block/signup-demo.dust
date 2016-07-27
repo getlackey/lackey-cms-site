@@ -1,14 +1,7 @@
 <article class="signup-demo">
     <h1>{@editable content=data.content path="title" type="heading" parent=path editMode=edit /}</h1>
-    {^edit}
-        <input type="text" placeholder="{@editable content=data.content path="namePlaceholder" type="heading" parent=path /}" required>
-        <input type="email" placeholder="{@editable content=data.content path="emailPlaceholder" type="heading" parent=path /}" required>
-    {:else}
-        <div>{@editable content=data.content path="namePlaceholder" type="heading" parent=path editMode=edit /}</div>
-        <div>{@editable content=data.content path="emailPlaceholder" type="heading" parent=path editMode=edit /}</div>
-    {/edit}
+    <input type="text" placeholder="{namePlaceholder}" required>
+    <input type="email" placeholder="{emailPlaceholder}" required>
 
-    <button type="submit">
-        {@editable content=data.content path="buttonLabel" type="heading" parent=path editMode=edit /}
-    </button>
+    <button type="submit">{buttonLabel}</button>
 </article>

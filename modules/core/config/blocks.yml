@@ -4,15 +4,60 @@
         path: ~/core/partials/block/signup-demo
         type: block
         thumb: /img/cms/cms/svg/form.svg
+        props:
+            emailPlaceholder:
+                type: text
+                label: Placeholder for Email Field
+                name: emailPlaceholder
+            namePlaceholder:
+                type: text
+                label: Placeholder for Name Field
+                name: namePlaceholder
+            buttonLabel:
+                type: text
+                label: Button Label
+                name: buttonLabel
 
     -
         name: Copy + Call-to-action
         path: ~/core/partials/block/copy-cta
         type: block
+        props:
+            href:
+                type: text
+                label: URL
+                name: href
+            buttonLabel:
+                type: text
+                label: Button Label
+                name: buttonLabel
         thumb: /img/cms/cms/svg/copy.svg
 
     -
         name: Copy + Media
         path: ~/core/partials/block/copy-media
         type: block
+        props:
+            imageAlignment:
+                type: select
+                label: Image Alignment
+                name: imageAlignment
+                items:
+                    -
+                        label: Side
+                        value: side
+                    -
+                        label: Centre
+                        value: center
+            theme:
+                type: select
+                label: Theme
+                name: theme
+                items:
+                    -
+                        label: White
+                        value: white
+                    -
+                        label: Blue
+                        value: blue
         thumb: /img/cms/cms/svg/copy-image.svg

@@ -16,6 +16,7 @@
                         template: ~/core/partials/block/signup-demo
                         fields:
                             title: Contact us for a **free** personal demo of the Lackey CMS
+                        props:
                             namePlaceholder: Name
                             emailPlaceholder: Email
                             buttonLabel: Send me my link!
@@ -33,6 +34,7 @@
                                 source: img/core/lackey-cms-screenshot-1.png
                         props:
                             theme: white
+                            imageAlignment: side
 
                     -
                         type: Block
@@ -47,6 +49,7 @@
                                 source: img/core/lackey-cms-screenshot-2.png
                         props:
                             theme: white
+                            imageAlignment: side
 
                     -
                         type: Block
@@ -61,15 +64,16 @@
                                 source: img/core/lackey-emblem.svg
                         props:
                             theme: blue
+                            imageAlignment: center
 
                     -
                         type: Block
                         template: ~/core/partials/block/copy-cta
                         fields:
                             copy: Check out the Lackey UI prototype lorem ipsum dolor amet
-                            buttonLabel: Let's see it then
                             backgroundImage:
                                 type: Media
                                 source: img/core/lackey-ui-prototype.jpg
                         props:
                             href: https://projects.invisionapp.com/d/main#/console/7548432/162252325/preview
+                            buttonLabel: Let's see it then

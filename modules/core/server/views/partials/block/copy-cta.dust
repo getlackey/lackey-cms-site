@@ -2,7 +2,5 @@
          style="background-image: url({@media content=data.content parent=path path="backgroundImage" type="url"/})">
     {@editable content=data.content path="copy" parent=path editMode=edit /}
 
-    <a class="button" href="{href}">
-        {@editable content=data.content path="buttonLabel" type="heading" parent=path editMode=edit /}
-    </a>
+    <a class="button" href="{href}">{buttonLabel}</a>
 </article>
