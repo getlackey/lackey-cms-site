@@ -36,11 +36,11 @@ gulp dev
 
 ## Usage
 
-Navigate to `http://localhost:8080`
+Navigate to `http://localhost:8880`
 
 ## Manage
 
-Navigate to `http://localhost:8080/login` and login with
+Navigate to `http://localhost:8880/login` and login with
 
  * email `development@enigma-marketing.co.uk`
  * password `password`
