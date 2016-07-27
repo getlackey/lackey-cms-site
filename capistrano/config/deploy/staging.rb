@@ -1,4 +1,4 @@
-server '172.99.68.139', :app, :web, :db, :primary => true
+server '162.13.81.123', :app, :web, :db, :primary => true
 
 # node environment
 set :node_env, "staging"
