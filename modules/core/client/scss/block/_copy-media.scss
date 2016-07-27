@@ -2,7 +2,7 @@ article.copy-media {
     @mixin main() {
         display: flex;
 
-        padding: 10rem 2rem;
+        padding: 5rem 1rem;
 
         > section {
             max-width: 21.875em;
@@ -36,11 +36,35 @@ article.copy-media {
             flex-wrap: wrap;
 
             > * { flex: 1 1 100%; }
+
+            > section { padding: 0 1rem 5rem; }
+
+            > figure {
+                > * {
+                    max-width: 100%;
+                    max-height: 60vmin;
+                }
+            }
         } @else {
             &:nth-child(even) { flex-direction: row-reverse; }
             &:nth-child(odd) { flex-direction: row; }
 
             > * { flex: 0 1 50%; }
+
+            > section { padding: 5rem 1rem; }
+
+            > figure {
+                position: relative;
+
+                > * {
+                    position: absolute;
+                    left: 50%; top: 50%;
+                    width: auto;
+                    height: 80%;
+
+                    transform: translate(-50%, -50%);
+                }
+            }
         }
     }
 
