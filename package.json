@@ -1,7 +1,7 @@
 {
   "name": "lackey-cms-site",
   "dependencies": {
-    "lackey-cms": ">=0.5.22"
+    "lackey-cms": ">=0.7.1"
   },
   "scripts": {
     "debug": "./node_modules/lackey-cms/bin/lackey site debug --site default",
