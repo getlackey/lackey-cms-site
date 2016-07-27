@@ -9,6 +9,6 @@
         {@editable content=data.content path="copy" parent=path editMode=edit /}
     </section>
     <figure>
-        {@media content=data.content path="image" editMode=edit /}
+        {@media content=data.content parent=path path="image" editMode=edit /}
     </figure>
 </article>
