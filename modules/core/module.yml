@@ -1,9 +1,11 @@
 name : 'Lackey CMS Site'
 
+# Load main CMS modules - required for all base functionality
 require:
     - cms/users
     - cms/cms
 
+# Initial data - this data will be loaded on applicaiton startup. Basing on configuration in /config some data will override content of database, some not
 init:
     Language:
         -
@@ -11,8 +13,12 @@ init:
             enabled: true
             default: true
 
+    # !import notation allows to load content of other files
+    # Content - contains information about default pages
     Content: !import config/content/pages.yml config/content/marginals.yml
 
+    # Template - contains information about various templates including shared content, variants and blocks
     Template: !import config/blocks.yml config/templates.yml
 
+    # User - contains default users data
     User: !import config/user.yml

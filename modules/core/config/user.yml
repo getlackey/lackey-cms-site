@@ -1,5 +1,10 @@
 ---
     -
+        # This is first, default user
+        # His credentails would be email and password as given
+        # Password will be stored as hashed/salted. You can change it after startup.
+        # Users are loaded only once and never overriden by default.
+        #
         email: development@enigma-marketing.co.uk
         name: Developer
         password: password

@@ -47,6 +47,7 @@ Navigate to `http://localhost:8080/login` and login with
 
 ## Resources
 
+ * Read comments in https://github.com/getlackey/lackey-cms-site/blob/master/modules/core/module.yml and other YAML files in https://github.com/getlackey/lackey-cms-site/tree/master/modules/core/config
  * Lackey Repository https://github.com/getlackey/lackey-cms
  * Lackey open manual https://sielay.gitbooks.io/lackey/content/
 
