@@ -20,5 +20,5 @@ module.exports = {
             'User'
         ]
     },
-    host: 'http://staging.lackey.io'
+    host: 'https://staging.lackey.io'
 };

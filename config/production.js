@@ -9,5 +9,5 @@ module.exports = {
             }
         }
     },
-    host: 'http://lackey.io'
+    host: 'https://lackey.io'
 };
