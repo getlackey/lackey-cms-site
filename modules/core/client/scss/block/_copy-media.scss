@@ -32,7 +32,7 @@ article.copy-media {
         > figure { text-align: center; }
     }
 
-    @mixin layout($is-stacked: false) {
+    @mixin layout($figure-offset: 10%, $is-stacked: false) {
         @if $is-stacked {
             flex-direction: row;
             flex-wrap: wrap;
@@ -50,14 +50,14 @@ article.copy-media {
                 flex-direction: row-reverse;
 
                 > figure[data-image-alignment=side] > * {
-                    transform: translate(-60%, -50%);
+                    transform: translate(#{-50% - $figure-offset}, -50%);
                 }
             }
             &:nth-child(odd) {
                 flex-direction: row;
 
                 > figure[data-image-alignment=side] > * {
-                    transform: translate(-40%, -50%);
+                    transform: translate(#{-50% + $figure-offset}, -50%);
                 }
             }
 
@@ -98,8 +98,8 @@ article.copy-media {
 
     @media #{$media-maximum} { @include layout(); }
     @media #{$media-normal} { @include layout(); }
-    @media #{$media-small} { @include layout(); }
-    @media #{$media-minimum} { @include layout(true); }
+    @media #{$media-small} { @include layout(25%); }
+    @media #{$media-minimum} { @include layout(0%, true); }
 
     &[data-theme=white] { @include color($color-blue-mid, $color-blue-dim, $color-blue-dim, #fff); }
     &[data-theme=blue] { @include color(#fff, $color-blue-light, #fff, $color-blue-mid); }
