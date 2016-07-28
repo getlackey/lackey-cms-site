@@ -9,5 +9,16 @@ module.exports = {
             }
         }
     },
+    yml: {
+        drop: true,
+        override: [
+            'Content',
+            'Template',
+            'Role',
+            'Taxonomy',
+            'TaxonomyType',
+            'User'
+        ]
+    },
     host: 'http://staging.lackey.io'
 };
