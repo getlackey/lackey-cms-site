@@ -6,9 +6,7 @@
         state: published
         props:
             og_title: Lackey CMS
-            og_image:
-                type: Media
-                source: img/core/lackey-cms-screenshot-1.png
+            og_image: img/core/lackey-cms-screenshot-1.png
             headerImageXOffset: 0
             headerImageYOffset: 32
             headerImageSize: 60
