@@ -106,6 +106,7 @@ header.page {
                 &.repository { right: 2rem; }
                 &.logo { left: 2rem; }
             }
+            > figure { display: none; }
         } @else {
             > h1, > p { left: 6.25rem; }
             > a {
