@@ -9,7 +9,7 @@
         <meta property="og:title" content="{og_title}" />
         {?og_type}<meta property="og:type" content="{og_type}" />{/og_type}
         <meta property="og:url" content="{og_url}" />
-        {?og_image}<meta property="og:image" content="{og_image}" />{/og_image}
+        {?og_image}<meta property="og:image" content="{og_image|base}" />{/og_image}
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,900">
         {#stylesheets}<link rel="stylesheet" href="{.}"/>{/stylesheets}
