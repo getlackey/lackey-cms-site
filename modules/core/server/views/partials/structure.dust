@@ -22,6 +22,7 @@
         </main>
         {@block route="marginal/footer" template="~/core/partials/marginal/footer" /}
 
+        <script src="js/core/index.js"></script>
         {?edit}<script src="js/cms/cms/iframe.js"></script>{/edit}
         {#javascripts}<script type="text/javascript" src="{.}"></script>{/javascripts}
     </body>

@@ -1,15 +1,122 @@
 header.page {
     @mixin main() {
+        position: relative;
+        height: 31.25rem;
 
+        background-color: $color-blue-mid;
+
+        > h1 {
+            position: absolute;
+            top: 45%;
+
+            @include font-copy(300);
+            font-size: 1.375rem;
+            text-transform: uppercase;
+
+            color: #fff;
+        }
+
+        > p {
+            position: absolute;
+            top: 50%;
+
+            @include font-header();
+            font-size: 3.25rem;
+
+            color: #fff;
+
+            > strong {
+                position: relative;
+
+                font-style: normal;
+                font-weight: inherit;
+
+                &:after {
+                    content: "";
+
+                    position: absolute;
+                    left: 0; right: 0;
+                    bottom: 0.05em;
+                    height: 0.05em;
+
+                    background-color: #fff;
+                    pointer-events: none;
+                }
+            }
+        }
+
+        > a {
+            position: absolute;
+            top: 4.375rem;
+            z-index: 2;
+
+            transform: translateY(-100%);
+
+            > svg {
+                fill: #fff;
+            }
+
+            &.repository svg {
+                width: auto;
+                height: 1.875rem;
+            }
+
+            &.logo svg {
+                width: auto;
+                height: 1.5rem;
+            }
+        }
+
+        > figure {
+            position: absolute;
+            bottom: -6rem;
+            right: -12rem;
+            z-index: 1;
+            width: 65%;
+            max-width: 55rem;
+
+            pointer-events: none;
+
+            img {
+                width: 100%;
+
+                &[src="undefined"] {
+                    content: transparent-gif();
+
+                    height: 20rem;
+
+                    background: repeating-linear-gradient(
+                        45deg,
+                        rgba(#fff, 0.5),
+                        rgba(#fff, 0.5) 10px,
+                        transparent 10px,
+                        transparent 20px);
+                    border-radius: 1rem 0 0 1rem;
+                    transform: translateY(-80%);
+                }
+            }
+        }
     }
 
-    @mixin layout() {
-
+    @mixin layout($is-stacked: false) {
+        @if $is-stacked {
+            > h1, > p { left: 2rem; }
+            > a {
+                &.repository { right: 2rem; }
+                &.logo { left: 2rem; }
+            }
+        } @else {
+            > h1, > p { left: 6.25rem; }
+            > a {
+                &.repository { right: 6.25rem; }
+                &.logo { left: 6.25rem; }
+            }
+        }
     }
 
     @include main;
 
     @media #{$media-normal} { @include layout(); }
     @media #{$media-small} { @include layout(); }
-    @media #{$media-minimum} { @include layout(); }
+    @media #{$media-minimum} { @include layout(true); }
 }

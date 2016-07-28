@@ -8,4 +8,7 @@
 
     <h1>{@editable content=data.content path="title" type="heading" parent=path editMode=edit /}</h1>
     <p>{@editable content=data.content path="subtitle" type="heading" parent=path editMode=edit /}</p>
+    <figure data-x-offset="{headerImageXOffset}" data-y-offset="{headerImageYOffset}" data-size="{headerImageSize}">
+        {@media content=data.content path="headerImage" parent=path editMode=edit /}
+    </figure>
 </header>

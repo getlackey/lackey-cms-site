@@ -7,3 +7,7 @@
             -
                 path: layout.blocks
                 type: List
+        props:
+            headerImageXOffset: number
+            headerImageYOffset: number
+            headerImageSize: number
