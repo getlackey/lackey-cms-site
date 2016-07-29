@@ -50,10 +50,10 @@
                         type: Block
                         template: ~/core/partials/block/copy-media
                         fields:
-                            title: Power for developers
-                            subtitle: Easy to use and difficult to break.
+                            title: Power for Developers
+                            subtitle: Build better, faster.
                             copy: |
-                                Lackey facilitates the Client / Agency relationship, enforcing design rules and keeping admin users on a need to know basis. No dev stuff. It’s simple, focused &amp; consistent. Most CMS's let admins pick fonts, add hex ref colours, write HTML tags, and inject content in situations where it was never intended to go. Lackey gives admins just enough power and an easy life.
+                                The core technologies Lackey is built on are [Node.js](https://nodejs.org/) & [PostgreSQL](https://www.postgresql.org/). We use [npm](https://www.npmjs.com/) in favour of a plugin architecture and have the [core implemented as an npm module](https://github.com/getlackey/lackey-cms) and abstracted out from the instance (website or theme to those transitioning to us to escape Wordpress). We also provide an [open source example site](https://github.com/getlackey/lackey-cms-site) which will allow you to run/reuse the exact website you're reading now. Enjoy!
                             image:
                                 type: Media
                                 source: img/core/lackey-cms-screenshot-2.png
@@ -65,10 +65,10 @@
                         type: Block
                         template: ~/core/partials/block/copy-media
                         fields:
-                            title: Freedom for designers
-                            subtitle: Be creative. Not constrained
+                            title: Freedom for Designers
+                            subtitle: Be creative. Not constrained.
                             copy: |
-                                Lackey facilitates the Client / Agency relationship, enforcing design rules and keeping admin users on a need to know basis. No dev stuff. It’s simple, focused &amp; consistent. Most CMS's let admins pick fonts, add hex ref colours, write HTML tags, and inject content in situations where it was never intended to go. Lackey gives admins just enough power and an easy life.
+                                Downloading $20 Wordpress themes and retrofitting the PSD with a font change brings shame on us all. Be original! Lackey layouts are limited only by your creativity. Structural Page Composition can be delegated to the client/admin who best knows how to tell their story; without giving them the means to compromise it's aesthetic. This new breed of CMS has been reimagined from the ground up as the perfect tool to collaborate on amazing, unique visual content.
                             image:
                                 type: Media
                                 source: img/core/lackey-emblem.svg
@@ -80,7 +80,7 @@
                         type: Block
                         template: ~/core/partials/block/copy-cta
                         fields:
-                            copy: Check out the Lackey UI prototype lorem ipsum dolor amet
+                            copy: The Lackey UI roadmap prototype is on InVision. Use your right arrow key!
                             backgroundImage:
                                 type: Media
                                 source: img/core/lackey-ui-prototype.jpg
