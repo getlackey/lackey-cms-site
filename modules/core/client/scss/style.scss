@@ -44,6 +44,16 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    color: $color-blue-dark;
+
+    transition: color 0.2s $timing-material-standard;
+
+    &:visited { color: $color-blue-dim; }
+    &:hover { color: $color-blue-mid; }
+    &:active { color: $color-blue-light; }
+}
+
 img[src=""], img:not([src]) { display: none; }
 
 @import "lackey";
