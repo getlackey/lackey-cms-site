@@ -11,6 +11,10 @@ article.signup-demo {
             font-size: 1.375rem;
             color: #fff;
         }
+
+        button, a.button {
+            &:hover { background-color: mix($color-blue-dark, $color-blue-mid); }
+        }
     }
 
     @mixin layout($is-stacked: false) {
