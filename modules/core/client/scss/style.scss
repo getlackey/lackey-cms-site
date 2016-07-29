@@ -23,7 +23,6 @@ html {
     @media #{$media-normal} { font-size: width-proportional-size(1280); }
     @media #{$media-small} { font-size: width-proportional-size(800); }
     @media #{$media-minimum} { font-size: width-proportional-size(400); }
-    @media #{$media-maximum} { font-size: 16px; }
 
     @include font-copy();
 
@@ -39,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    max-width: 100%;
+
+    overflow-x: hidden;
 }
 
 img[src=""], img:not([src]) { display: none; }
