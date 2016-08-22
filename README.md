@@ -65,4 +65,4 @@ Copyright (c) 2016 Enigma Marketing Services Ltd.
 
 Get Involved on [GitHub](https://github.com/getlackey) or Follow [@getlackey](https://twitter.com/GetLackey) on twitter.
 
-Open sourced by Enigma ![Enigma Marketing Services](https://github.com/getlackey/lackey-cms/raw/master/docs/logo-spiral@2x.png)
+Open sourced by [Enigma](https://enigma-marketing.co.uk)
