@@ -51,6 +51,10 @@ Navigate to `http://localhost:8880/login` and login with
  * Lackey Repository https://github.com/getlackey/lackey-cms
  * Lackey open manual https://sielay.gitbooks.io/lackey/content/
 
+## Security Disclosure
+
+Security is very important to us. If you have any issue regarding security, please disclose the information responsibly by sending an email to security@lackey.io and not by creating a GitHub issue.
+
 ## License
 
 The MIT License (MIT)
