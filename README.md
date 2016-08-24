@@ -1,11 +1,16 @@
-# Lackey Website - boilerplate
+# Lackey Example Website
 
- * Compatible with Lackey `>=0.7`
+Repo serves several purposes:
 
-## Prerequirements
+- Example Lackey CMS powered website instance example
+- Boilerplate for the configuration of new projects
+- Source for the live Lackey CMS website [https://lackey.io](https://lackey.io)
+
+## Requirements
 
  * Node 4+
  * PostgreSQL 9.5+
+ * Lackey `>=0.7`
 
 ## Quick Start
 
