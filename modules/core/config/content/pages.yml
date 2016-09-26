@@ -38,7 +38,7 @@
                             title: For Content Admins
                             subtitle: Easy to use and difficult to break.
                             copy: |
-                                Lackey facilitates the Client / Agency relationship, enforcing design rules and keeping admin users on a need to know basis. No dev stuff. It’s simple, focused &amp; consistent. Most CMS's let admins pick fonts, add hex ref colours, write HTML tags, and inject content in situations where it was never intended to go. Lackey gives admins just enough power and an easy life.
+                                Lackey facilitates the Client / Agency relationship, enforcing design rules and keeping admin users on a need to know basis. No dev stuff. It’s simple, focused and consistent. Most CMS's let admins pick fonts, add hex ref colours, write HTML tags, and inject content in situations where it was never intended to go. Lackey gives admins just enough power and an easy life.
                             image:
                                 type: Media
                                 source: img/core/lackey-cms-screenshot-1.png
