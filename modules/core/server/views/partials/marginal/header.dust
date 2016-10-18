@@ -6,8 +6,8 @@
         {> "~/core/partials/svg/logo-github" /}
     </a>
 
-    <h1>{@editable content=data.content path="title" type="heading" parent=path editMode=edit /}</h1>
-    <p>{@editable content=data.content path="subtitle" type="heading" parent=path editMode=edit /}</p>
+    {@editable content=data.content path="title" tag="h1" parent=path editMode=edit /}
+    {@editable content=data.content path="subtitle" tag="p" parent=path editMode=edit /}
     <figure data-x-offset="{headerImageXOffset}" data-y-offset="{headerImageYOffset}" data-size="{headerImageSize}">
         {@media content=data.content path="headerImage" parent=path editMode=edit /}
     </figure>

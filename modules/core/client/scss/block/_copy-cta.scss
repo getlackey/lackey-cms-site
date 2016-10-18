@@ -10,7 +10,7 @@ article.copy-cta {
         background-position: center;
         box-shadow: 0 1.25rem 2.5rem -1.25rem rgba(0, 0, 0, 0.15) inset;
 
-        > p {
+        > p, > section > p {
             margin-bottom: 3rem;
 
             @include font-header(400);

@@ -22,7 +22,7 @@ article.copy-media {
                 & + * { margin-top: 3.5rem; }
             }
 
-            > p:not(:first-of-type) {
+            > section > p {
                 @include font-copy();
                 font-size: 0.875rem;
                 line-height: 1.7;
@@ -90,7 +90,7 @@ article.copy-media {
         > section {
             > h1 { color: $color-header; }
             > p:first-of-type { color: $color-subtitle; }
-            > p:not(:first-of-type) { color: $color-copy; }
+            > section > p { color: $color-copy; }
         }
     }
 

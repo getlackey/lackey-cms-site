@@ -1,5 +1,5 @@
 <article class="signup-demo">
-    <h1>{@editable content=data.content path="title" type="heading" parent=path editMode=edit /}</h1>
+    {@editable content=data.content path="title" tag="h1" parent=path editMode=edit /}
     <input type="text" placeholder="{namePlaceholder}" required>
     <input type="email" placeholder="{emailPlaceholder}" required>
 
