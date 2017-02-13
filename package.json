@@ -1,6 +1,7 @@
 {
   "name": "lackey-cms-site",
   "dependencies": {
+    "gulp": "^3.9.1",
     "lackey-cms": "^1.0.0-beta-11"
   },
   "scripts": {
