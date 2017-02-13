@@ -13,8 +13,12 @@ article.signup-demo {
         }
 
         button, a.button {
+            @include button;
+
             &:hover { background-color: mix($color-blue-dark, $color-blue-mid); }
         }
+
+        > input { @include input; }
     }
 
     @mixin layout($is-stacked: false) {

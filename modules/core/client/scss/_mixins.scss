@@ -25,3 +25,60 @@
     font-style: $style;
     font-weight: $weight;
 }
+
+@mixin button() {
+    display: inline-block;
+    padding: $button-padding;
+
+    @include font-copy(900);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: $color-blue-mid;
+    border: 1px solid transparent;
+    border-radius: 4rem;
+
+    user-select: none;
+
+    transition: background-color 0.2s $timing-material-standard;
+
+    &:hover { background-color: $color-blue-dark; }
+    &[disabled] {
+        pointer-events: none;
+
+        color: $color-blue-light;
+        background-color: transparent;
+        border-color: $color-blue-light;
+
+        cursor: default;
+    }
+
+    &:link, &:hover, &:active, &:visited {
+        color: #fff;
+    }
+}
+
+@mixin input() {
+    padding: $button-padding;
+    padding-left: 4rem;
+
+    @include font-copy();
+    font-size: 0.875rem;
+
+    background-color: transparent;
+    background-image: url(../../img/core/icon/text.svg);
+    background-repeat: no-repeat;
+    background-position: 1.4rem center;
+    background-size: 1.625rem auto;
+
+    &[type=email] { background-image: url(../../img/core/icon/email.svg); }
+
+    color: #fff;
+    border: 1px solid $color-blue-light;
+    border-radius: 4rem;
+
+    &::placeholder { color: #fff; }
+}

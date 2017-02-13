@@ -20,6 +20,8 @@ article.copy-cta {
         }
 
         > a.button {
+            @include button;
+
             width: 33%;
             min-width: 20em;
             max-width: 19.75em;
